@@ -147,3 +147,24 @@ document.querySelectorAll('.skills-card').forEach(card => {
         card.style.transform = 'translateY(0)';
     });
 });
+
+
+document.getElementById("submitbtn").addEventListener("click", function() {
+    // Data to send in the POST request
+    const postData = {
+        name: 'foo',
+        email: 'bar',
+        subject: "mm",
+        message: "lool"
+    };
+
+    fetch("https://formsubmit.co/ajax/oussama.saddi@gmail.com", {
+        method: 'POST',  // Specify the POST method
+        headers: {
+            'Content-Type': 'application/json'  // Set content type to JSON
+        },
+        body: JSON.stringify(postData)  // Convert the data object to a JSON string
+    })
+    .then(response => console.log(response.json()))  // Parse the JSON response
+    .catch(error => console.error("Error posting data:", error));
+});
