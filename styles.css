@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--light);
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .hero-buttons .btn {
-    padding: 12px 30px;
+    
     font-weight: 600;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -553,12 +553,20 @@ body {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+.phoneheader{
+
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
     }
+    .phoneheader{
+    margin-top: 5rem;
+    }
+
 
     .hero-subtitle {
         font-size: 1.5rem;
@@ -598,4 +606,19 @@ body {
     .section-title {
         font-size: 2rem;
     }
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-bottom;
+    border: 0.15em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
 }
