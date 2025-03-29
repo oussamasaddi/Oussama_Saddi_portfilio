@@ -565,7 +565,7 @@ body {
 
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .hero-title {
         font-size: 2.5rem;
     }
