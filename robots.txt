@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://oussamasaddi.github.io/Oussama_Saddi_portfilio/sitemap.xml
